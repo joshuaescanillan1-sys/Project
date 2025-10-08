@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f07218;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a:hover {
+      color: #3498db;
+    }
+
+    .hero {
+      height: 70vh;
+      background-image: url(550300394_2265025553944965_61886492868792241_n.jpg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .products {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 1rem;
+    }
+
+    .product-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-info p {
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #2ecc71;
+      color: #fff;
+      border-radius: 20px;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover {
+      background: #27ae60;
+    }
+
+   
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">DOORDASH</div>
+      <div class="nav-links">
+        <a href="lexi.html">Home</a>
+        <a href="lexi.html">Shop</a>
+        <a href="indexs.html">About</a>
+        <a href="profile.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>ENJOY SHOPPING</h1>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      
+      <div class="product">
+        <img src="pandesal.jpg" alt="Malunggay Pandesal">
+        <div class="product-info">
+          <h3>Malunggay Pandesal</h3>
+          <p>Init pa Tag Dos ra.</p>
+          <span class="price">$2</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="425128-1682431009_Boozteditorialupdatetheiconicsneakerguidesummary.jpg" alt="Shoes">
+        <div class="product-info">
+          <h3>Classic Sneakers</h3>
+          <p>Comfort meets style.</p>
+          <span class="price">$90</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="images.jpg" alt="Bag">
+        <div class="product-info">
+          <h3>Leather Bag</h3>
+          <p>Perfect for everyday essentials.</p>
+          <span class="price">$180</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="20_c90251b5-4da2-4ae4-9ddc-9e594f3a0bb2.jpeg" alt="Headphones">
+        <div class="product-info">
+          <h3>Wireless Headphones</h3>
+          <p>Experience sound like never before.</p>
+          <span class="price">$120</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="download.jpg" alt="Camera">
+        <div class="product-info">
+          <h3>Luxury Camera</h3>
+          <p>Shoot each memories you make.</p>
+          <span class="price">$2500</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="cellphone.jpeg" alt="Cellphone">
+        <div class="product-info">
+          <h3>Luxury Phone</h3>
+          <p>Fast and luxurious.</p>
+          <span class="price">$190</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="guitar.jpeg" alt="Guitar">
+        <div class="product-info">
+          <h3>Electric Guitar</h3>
+          <p>Perfect for Music Lover.</p>
+          <span class="price">$1808</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="laptop.jpg" alt="Headphones">
+        <div class="product-info">
+          <h3>Laptop</h3>
+          <p>Fast and Affordable.</p>
+          <span class="price">$1020</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="ricecooker.jpeg" alt="Rice cooker">
+        <div class="product-info">
+          <h3>Luxury Rice Cooker</h3>
+          <p>Cook all you want.</p>
+          <span class="price">$25</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="trypan.jpg" alt="Try Pan">
+        <div class="product-info">
+          <h3>Luxury Try Pan</h3>
+          <p>Cook with Passion.</p>
+          <span class="price">$19</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="printer.jpg" alt="Printer">
+        <div class="product-info">
+          <h3>3D Printer</h3>
+          <p>Perfect for Students.</p>
+          <span class="price">$108</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="mouse.jpeg" alt="Mouse">
+        <div class="product-info">
+          <h3>Wireless Mouse</h3>
+          <p>Fast and Affordable.</p>
+          <span class="price">$10</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="keyboard.jpg" alt="Keyboard">
+        <div class="product-info">
+          <h3>Wireless Keyboard</h3>
+          <p>Type the best essay.</p>
+          <span class="price">$50</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="speaker.jpeg" alt="Bluetooth speaker">
+        <div class="product-info">
+          <h3>Bluetooth Speaker</h3>
+          <p>Slay with beat.</p>
+          <span class="price">$109</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="powerbank.jpeg" alt="Powerbank">
+        <div class="product-info">
+          <h3>Power Bank</h3>
+          <p>Perfect for Students.</p>
+          <span class="price">$108</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="thumbnail-1704375617992_54af31a8-c6cd-4821-84e6-ff99775e7f25.jpeg" alt="Luxury Watch">
+        <div class="product-info">
+          <h3>Luxury Watch</h3>
+          <p>Elegant and timeless design.</p>
+          <span class="price">$250</span><br>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DoorDash. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

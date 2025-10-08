@@ -1,0 +1,36 @@
+/* General card styling */
+.profile-card1, 
+.profile-card2, 
+.profile-card3, 
+.profile-card4 {
+  border-radius: 1rem;       /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Soft shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-card1 {
+  background: linear-gradient(135deg, #84eea2, #fcb69f); /* Peach gradient */
+}
+
+.profile-card2 {
+  background: linear-gradient(135deg, #3fc6db, #ecbf41); /* Cool gray gradient */
+}
+
+.profile-card3 {
+  background: linear-gradient(135deg, #9eea48, #f03e4f); /* Light blue gradient */
+}
+
+.profile-card4 {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1); /* Green gradient */
+  padding-bottom: 40px;
+  
+}
+
+/* Hover effect */
+.profile-card1:hover, 
+.profile-card2:hover, 
+.profile-card3:hover, 
+.profile-card4:hover{
+
+  transform: scale(1.02);
+}
